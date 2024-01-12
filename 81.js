@@ -65,3 +65,5 @@ console.log(hello.prototype.sing());
 // Ye object humme free milti hain Js ke kisi v function ke sath
 
 
+
+
