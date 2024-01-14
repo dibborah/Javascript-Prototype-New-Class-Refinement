@@ -50,9 +50,9 @@
 
 function createUser(firstName, lastName, email, age, address) {
   const user = {};
-  (user.firstName = firstName),
-    (user.lastName = lastName),
-    (user.email = email);
+  user.firstName = firstName,
+  user.lastName = lastName,
+  user.email = email;
   user.age = age;
   user.address = address;
   user.about = function () {
