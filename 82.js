@@ -53,8 +53,8 @@ const user2 = createUser(
 );
 const user3 = createUser("d", "borah", "d.borah@email.com", 9, "Pegasus Tower");
 console.log(user1);
-console.log(user1.about());
-console.log(user1.is18());
+// console.log(user1.about());
+// console.log(user1.is18());
 // console.log(createUser.prototype);
 // createUser.prototype.uniqueKey="uniqueKey";
 // createUser.key1 ="value1";

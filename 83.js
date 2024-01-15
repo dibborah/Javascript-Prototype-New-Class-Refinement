@@ -1,72 +1,58 @@
-// console.log("hello universe!!!");
+// Improvement using new keyWord
 
-// new keyword
+// constructor function: Because it is constructing an object for us
 
-// function hello() {
-//     console.log("hello world");
-//   }
-  
-  // javascript fc fc to hain par fc ek object v hain
-  // fc => treat => fc + object
-  
-  // console.log(hello.name);// name is a property which gives the of the function where it is used
-  // hello.myOwnProperty = "Example property"
-  // console.log(hello.myOwnProperty);
-  // hello.num = 7;
-  // console.log(hello.prototype);
-  
-  // name property tells function name
-  
-  // function provides more useful properties
-  
-  // call method // bind method
-  
-  // function hame object dete hain(kind of free space)
-  
-  // Js main function humme mufat main space deti hain
-  
-  // Free space => {} => [[Prototype]]
-  
-  // [[Prototype]] => Object => Which comes along with every object => Free space
-  
-  // console.log(hello.prototype);
-  
-  // Only function provide prototype property
-  // humne check karna hain ki koi property kisi object main hain ki nahi hain
-  
-  // Function => Function + Object 
-  
-  // const hello = {key1: "value1"};// prototype is not present here
-  // const hello = ["value1"];// prototype is neither present here
-  
-  // # Note prototype is only present in functions
-  
-//   if(hello.prototype){
-//       console.log("Prototype is present");
-//   }else{
-//       console.log("Prototype is not present");
-//   }
-  
-  // Means hello function ke pass prototype property present hoti hain
-  
-  // This is an empty object
-  
-//   hello.prototype.abc = "string1";
-//   hello.prototype.xyz = "string2";
-//   hello.prototype.sing = function(){
-//       return "lalala";
-//   }
+// # In constructor function it is a convention to write the first letter of the name of the funciton in upper case
+// Write the first character in CAPITAL letters of the name of the function when defining or creating Constructor function
+// This helps the future develops who have to understand the code to know that the function is a constructor function
+// Why it is important for the developer to know this
+// B/c then he would know that he have to create object using the function with the new keyword
+// This is a Convention
+// You must follow it in order to be a better CODER / DEVELOPER
+function CreateUser(firstName, lastName, email, age, address) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.email = email;
+  this.age = age;
+  this.address = address;
+}
 
-//   console.log(hello.prototype.sing());
-  
-  // console.log(hello.prototype.abc);
-  
-  // # proto => Chain create kar raha tha // proto ek reference tha
-  
-  // Prototype ek object hain
-  // Ye object humme free milti hain Js ke kisi v function ke sath
-  
-  
-  
-  
-  
+CreateUser.prototype.about = function () {
+  // console.log(this);
+  return `${this.firstName} is ${this.age} years old.`;
+};
+CreateUser.prototype.is18 = function () {
+  // console.log(this);
+  return this.age >= 18;
+};
+CreateUser.prototype.sing = function () {
+  return "lalala lala";
+};
+
+const user1 = new CreateUser(
+  "dibya",
+  "borah",
+  "dibya.borah@email.com",
+  25,
+  "Pegasus Tower"
+);
+const user2 = new CreateUser(
+  "dib",
+  "borah",
+  "dib.borah@email.com",
+  15,
+  "Pegasus Tower"
+);
+const user3 = new CreateUser(
+  "d",
+  "borah",
+  "d.borah@email.com",
+  9,
+  "Pegasus Tower"
+);
+console.log(user1);
+console.log(user1.about());
+// console.log(user1.is18());
+// console.log(user2);
+// console.log(user2.about());
+// console.log(user2.is18());
