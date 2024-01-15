@@ -32,6 +32,7 @@ const obj2 = Object.create(obj1);// See here that in create method we are passin
 obj2.key3 = "value3";
 // obj2.key2 = "unique";
 // console.log(obj2.key2);
+console.log(obj2);
 console.log(obj2.__proto__);// The object inside the object can be accessed using __proto__ 
 // obj2.__proto__.key4 = "dance"// In the [[prototype]] object inside an object extra properties and key value pairs can also be added using __proto__
 

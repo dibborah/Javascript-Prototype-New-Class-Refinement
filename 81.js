@@ -15,7 +15,7 @@ function hello() {
 // hello.num = 7;
 // console.log(hello.prototype);
 
-// name property tells function name
+// name property ------> tells function name
 
 // function provides more useful properties
 
@@ -51,12 +51,15 @@ if(hello.prototype){
 
 // This is an empty object
 
+hello.test="test";
+
 hello.prototype.abc = "string1";
 hello.prototype.xyz = "string2";
 hello.prototype.sing = function(){
     return "lalala";
 }
 console.log(hello.prototype.sing());
+console.log(hello.prototype);
 // console.log(hello.prototype.abc);
 
 // # proto => Chain create kar raha tha // proto ek reference tha
