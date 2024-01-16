@@ -22,4 +22,9 @@ function CreateUser(firstName, lastName, email, age, address) {
   const user2 = new CreateUser("dib","borah","dib.borah@email.com",15,"Pegasus Tower");
   const user3 = new CreateUser("d","borah","d.borah@email.com",9,"Pegasus Tower");
 
-  
+  for(let key in user1){
+    if(user1.hasOwnProperty(key)){
+      // console.log(key);
+    }
+    // console.log(key);
+  }
