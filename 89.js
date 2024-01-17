@@ -68,7 +68,11 @@ class Animal {
   
   const dog1 = new Dog("tommy", 3, 45);// Yaha hum in properties("tommy", 3, 45) ko add karne ke liye kon sa constructor istamaal (use) kar rahe hain
   // Hum Animal class wala constructor use kar rahe hain
-  console.log(dog1);
-  console.log(dog1.run());
-  console.log(dog1.eat());
+  // console.log(dog1);
+  // console.log(dog1.run());
+  // console.log(dog1.eat());
+
+  const animal1 = new Animal("sheru", 2);
+  console.log(animal1);
+  console.log(animal1.eat());
   
