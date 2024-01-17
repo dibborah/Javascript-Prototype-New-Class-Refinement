@@ -1,5 +1,4 @@
 // getters and setters
-
 class Person{
     constructor(firstName, lastName, age){
         this.firstName = firstName;
