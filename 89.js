@@ -1,3 +1,4 @@
+// Same method in SUBBASE CLASS
 class Animal {
     constructor(name, age) {
       this.name = name;
@@ -42,6 +43,9 @@ class Animal {
           // super() method kiya kati hain// super class wale constructur main super class main  pass hone wali values lo super method sop deti hain. To super class wali constructor h unvalues ko set karti hain Dog class wala constructor un values ko set nahi karegi
           this.speed = speed;        
       }
+      eat(){
+        return `Modified Eat: ${this.name} is eating`
+      }
       run(){
         return `${this.name} is running at ${this.speed}KMPH`
       }
@@ -66,4 +70,5 @@ class Animal {
   // Hum Animal class wala constructor use kar rahe hain
   console.log(dog1);
   console.log(dog1.run());
+  console.log(dog1.eat());
   
